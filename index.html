@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HARRY’s POULTRY FARM KENYA (H.P.F)</title>
+      
+    <!--bootstrap-->
+      
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+
+
+    <style type="text/css">
+        #container{
+            height:450px;
+            width:100%;
+            margin:20px auto;
+            position:relative;
+            
+        }
+        #img{
+            height:450px;
+            width:100%;
+            position:absolute;
+            
+        }
+        /*#left{
+            font-size:50px;
+            margin-left:20px;
+            color:#fff;
+            background:#008de6;
+            text-align:center;
+            line-height:40px;
+            height:40px;
+            width:40px;
+            margin-top:-250px !important;
+            position:absolute;
+            opacity:0.7;
+            border-radius:50%;
+*/
+        }
+    </style>
+
+    <script type="text/javascript">
+        
+        var imgcount = 1;
+        var total = 5;
+        function slide(x){
+            var Image=document.getElementById('img');
+            imgcount = imgcount+x;
+            if(imgcount>total){imgcount=1;}
+            if(imgcount<1){imgcount=total;}
+            Image.src="images/image"+ imgcount+ ".jpg";
+        }
+        window.setInterval(function slideA(){
+            var Image=document.getElementById('img');
+            imgcount = imgcount+1;
+            if(imgcount>total){imgcount=1;}
+            if(imgcount<1){imgcount=total;}
+            
+            Image.src="images/images/image"+ imgcount+ ".jpg";
+            
+        }, 5000);
+    </script>
+
+
+  </head>
+  <body onload="slideA()">
+
+
+
+
+ <!--navigattion-->
+   <div id="myNavbar" class="navbar navbar-default navbar-fixed-top"role="navigation"style="background:#FF8551 !important;">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a href="#" class="navbar-brand" id="brand" style="font-family:typesetting; font-weight: bold;font-size:30px;margin-left:-40px !important;" title="Your unifying, processing and distributing partner.">HPF-<span style="color:#3AB6B6; text-transform:capitalize;">Kenya</span></a>
+         </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class=""><a href="#pricing">Products</a></li>
+              <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Departments<b class="caret"></b></a>
+                <ul class="dropdown-menu" style="text-align: center;background:color:aqua; background:#008d6e!important;
+                ; font-weight: bold;">
+                    <li><a href="#" style="width: 100%;"><span  data-toggle="modal" data-target="#add_interventions">Parent Stock</span> Farm</a></li><br>
+                    <li><a href="#" style="width: 100%;"><span  data-toggle="modal" data-target="#add_interventions3">Hatchery</span></a></li><br>
+                    <li><a href="slaughtering_page.html" style="width: 100%;">Slaughtering Department</a></li><br>
+                    <li><a href="#" style="width: 100%;"><span  data-toggle="modal" data-target="#add_interventions1">Consultancy Services</span></a></li>
+                </ul>
+            </li>
+             <li class="dropdown"> <a href="#our_clients" > Clients</a>
+                <li class=""><a href="#contact"> Contacts us</a></li>
+                <li class=""><a href="#clients"> About us</a></li>
+          </ul>
+          
+        </div>
+    </div>
+    </div>
+
+    <!--End Navigation-->
+    <!--Header-->
+      
+    <div class="slaughter_header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.6s">
+                    <h1 style="margin-top:100px !important; text-align:center;color:#008de6;"> WELCOME TO HARRY’s POULTRY FARM <span style="color:aqua; text-transform:capitalize !important;">KENYA</span></h1>
+                    <div id="" style="text-align:center;">
+                        <button class="btn btn-lg btn-primary">order Now</button>
+                        <button class="btn btn-lg btn-danger">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      <!--End Header-->
+      
+      <!--services-->
+    <div id="services" class="services">
+        <div class="container">
+            <h2 class="wow fadeInUp" style="color:#FF8551">Services</h2>
+            <p  class="wow fadeInUp"data-wow-delay="0.4s" style="font-size:20px;">HPF is a modernized, advanced and synthesized poultry company which unifies production, processing and distribution.<br/>The following are some of the services that we offer. </p>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.8s">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <h4>Consultation services</h4>
+                    <p style="font-size:17px;">Our technical and management team also provides our clients with the assistance they need
+and constantly makes follow ups to ensure clients’ satisfaction is achieved.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.4s">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <h4>customer care services</h4>
+                    <p style="font-size:17px;"> We provide information to address inquiries regarding products and services. In addition, we deal with and help resolve any customer complaints</p>
+                </div>
+                <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    <h4>supply services</h></h4>
+                    <p style="font-size:17px;">Provision of door-to-door products distribution is our daily activity to ensure customer satisfation and streamline supply of our products to customers in their different locations.</p></div>
+                <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.4s">
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                    <h4>database services</h4>
+                    <p style="font-size:17px;">We also keep track of clients information for any reference to any record.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!--End Services-->
+      <!--Pricing-->
+    <div id="pricing"class="pricing">
+        <div class="container">
+            <h2 class="wow fadeInUp">Products</h2>
+            <p  class="wow fadeInUp"data-wow-delay="0.4s" style="font-size:19px;">Our products are sold at relatively cheap prices, <br>but maintaining good quality for clients' satisifaction.</p>
+            <div class="col-lg-3 col-md-3 wow flipInY" data-wow- delay="0.6s">
+                <div class="packages">
+                    
+                    <h4>Grillers</h4>
+                    <div id="BonelessChicken" >
+                        <img src="images/images/grillers.jpg" width="195" style="border-radius:50%!important;">
+                    </div>
+                   <li style="font-size:19px; font-weight:bold; text-decoration: underline;">Price</li>
+                    <li><s>USD 6.21</s></li>
+                    <li style="font-size:17px;"> Now USD 6.00</li>
+                    <br>    <br> 
+                    <button class="btn btn-success wow fadeIn" data-wow-delay="0.8s">Order Now</button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.7s">
+                <div class="packages">
+                    
+                    <h4>Chicken Gizzards</h4>
+                    <div id="BonelessChicken" >
+                        <img src="images/images/gizard.jpg" width="195"style="border-radius:50%!important;">
+                    </div>
+                    <li style="font-size:19px; font-weight:bold; text-decoration: underline;">Price</li>
+                    <li><s>USD 5.21</s></li>
+                    <li style="font-size:17px;">Now  Now USD 5.10</li><br>  
+                    <button class="btn btn-success wow fadeIn" data-wow-delay="1s">Order Now</button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 wow flipInY"data-wow-delay="1s">
+                <div class="packages">
+                    
+                    <h4>Boneless Chicken</h4>
+                    <div id="BonelessChicken" >
+                        <img src="images/images/bonelesschick1.jpg" width="195" style="border-radius:50%!important;">
+                    </div>
+                   <li style="font-size:19px; font-weight:bold; text-decoration: underline;">Price</li>
+                    <li><s>USD 8.91</s></li>
+                    <li style="font-size:17px;">Now USD 7.79</li>
+                    
+                    <button class="btn btn-success wow fadeIn" data-wow-delay="1.2">Order Now</button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.2s">
+                <div class="packages">
+                    
+                    <h4>Capoon</h4>
+                    <div id="BonelessChicken" >
+                        <img src="images/images/capoon2.jpg" width="195" style="border-radius:50%!important;">
+
+                    </div>
+                   <li style="font-size:19px; font-weight:bold; text-decoration: underline;">Price</li>
+                    <li><s>USD 6.10</s></li>
+                    <li style="font-size:17px;">Now USD 6.00</li>
+                    
+                    <button class="btn btn-success wow fadeIn" data-wow-delay="1.4s">Order Now</button>
+                </div>
+            </div>
+
+        </div>
+        <button class="btn btn-primary wow fadeIn" data-wow-delay="1.4s" style="margin-top:20px; font-weight:700;"><span  data-toggle="modal" data-target="#moreProducts">View More...</span></button>
+    </div>
+    <!--End Pricing-->
+    <!--Team-->
+    <div id="team"class="team">
+        <div class="container">
+            <div class="row">
+                <h2 class="wow fadeInUp">Meet Our Team</h2>
+                <p  class="wow fadeInUp"data-wow-delay="0.4s" style="font-size:19px;">The factory has created employment for about 5 casual workers and 5 permanent employees.</p>
+                <div class="col-lg-3  col-md-3 wow fadeInLeft" data-wow-delay="2s">
+                    <img src="images/images/avatar.jpg" alt="" class="img-circle">
+                    <h4>MR. HURRY</h4>
+                    <b> CEO and Founder of HPF</b>
+                    <p>Mr.Harry is the Manager of HPF and he is the founder of the factory.</p>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                </div>
+                 <div class="col-lg-3  col-md-3 wow fadeInLeft" data-wow-delay="1.6s">
+                    <img src="images/images/avatar.jpg" alt="" class="img-circle">
+                    <h4>MR. HARRY</h4>
+                    <b> CEO and Founder of HPF</b>
+                    <p>Mr.Harry is the Manager of HPF and he is the founder of the factory. </p>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-lg-3  col-md-3 wow fadeInLeft" data-wow-delay="1.2s">
+                    <img src="images/images/avatar.jpg" alt="" class="img-circle">
+                    <h4> MR. HARRY</h4>
+                    <b>  CEO and Founder of HPF</b>
+                    <p>Mr.Harry is the Manager of HPF and he is the founder of the factory.</p>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-lg-3  col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
+                    <img src="images/images/avatar.jpg" alt="" class="img-circle">
+                    <h4>MR. HARRY</h4>
+                    <b>  CEO and Founder of HPF</b>
+                    <p>Mr.Harry is the Manager of HPF and he is the founder of the factory.</p>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--End Team-->
+
+    <div id="our_clients" class="our_clients">
+        <div class="container-fluid">
+            <h2 class="wow fadeInUp" style="color:#FF8551; text-align:center;">Our clients</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div>
+                        <h3 style="color: #008de6;">Our clients ranges from individual consumption to institutions </h3>
+                        <h4 style="text-transform: capitalize;">Clients include:</h4>
+                        <p><i class="fa fa-square-o" style="color: #FF8551;"></i> Hospitals</p>
+                        <p><i class="fa fa-square-o" style="color: #FF8551;"></i> Schools</p>
+                        <p><i class="fa fa-square-o" style="color: #FF8551;"></i> Supermarkets</p>
+                        <p><i class="fa fa-square-o" style="color: #FF8551;"></i> Hotels</p>
+                        <p><i class="fa fa-square-o" style="color: #FF8551;"></i> and many others</p>
+                        <br>
+                        <p style="font-size:17px;">  &nbsp;&nbsp;&nbsp; Our parent stock breeding; production of eggs; hatching; feeds production; broiler rearing; processing and distribution of dressed poultry; HPF's endeavors to reduce product cost while improving quality and hygiene. </p>
+
+                    </div>
+                </div>
+                <div  class="col-lg-8  col-md-8">
+                     <div id="container">
+                        <img id="img" src="images/images/img1.jpg"/> 
+                        
+                    </div>
+                    <!-- <div id="left_holder"> <span id="left" onClick="slide(-1)"> < </span> </div>
+                    <div id="right_holder"> <span id="right"  onClick="slide(-1)"> > </span> </div> -->
+                       
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Clients-->
+    <div id="clients" class="clients">
+        <div class="container">
+            <div class="row">
+                <h2 class="wow fadeInUp" style="color:#fff;">About Us</h2>
+                <p  class="wow fadeInUp"data-wow-delay="0.4s" style="font-size:19px;">HPF is a modernized, advanced and synthesized poultry company which unifies production, processing and distribution. Our From parent stock breeding; production of eggs; hatching; feeds production; broiler rearing; processing and distribution of dressed poultry; HPF's endeavors to reduce product cost while improving quality and hygiene.</p>
+                <hr class="wow fadeInUp"data-wow-delay="0.4s">
+                <h3 class="wow fadeInUp"data-wow-delay="0.4s">Our Mission </h3>
+                    <p class="wow fadeInUp"data-wow-delay="0.4s" style="font-size:19px;">To work in partnership with organizations and individuals in providing quality, hygienic & pocket-friendly poultry products in Kenya.</p>
+                <hr class="wow fadeInUp"data-wow-delay="0.4s">
+                <h3 class="wow fadeInUp"data-wow-delay="0.4s">Our Vision</h3>
+
+                <p style="font-size:19px;" class="wow fadeInUp"data-wow-delay="0.4s">To be the most trusted partner recognized for excellence in producing and delivering poultry products in Kenya.</p>
+                <hr class="wow fadeInUp"data-wow-delay="0.4s">
+                <div class="wow fadeInUp"data-wow-delay="0.4s" >
+                    <h3 >Our Core Values</h3>
+                    <ol style="font-size:17px;">
+                        <li><i class="fa fa-check"></i> Professionalism.</li><br>
+                        <li><i class="fa fa-check"></i> Innovation.</li><br>
+                        <li><i class="fa fa-check"></i> Integrity.</li><br>
+                        <li><i class="fa fa-check"></i> Collaboration and team work.</li><br>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Clients-->
+    <!--Contact-->
+    
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <h2 class="wow fadeInUp">Contact us</h2>
+                <p  class="wow fadeInUp"data-wow-delay="0.4s" style="font-size:20px;">For more Informaion, Inquiries or Comments, find us on:</p>
+                <div class="col-lg-6 col-md-6">
+                    <table class="table" style="border:1px solid #FF8551;">
+                        <thead>
+                            <tr>
+                                <th style="border-right:1px solid #FF8551;">Contact Person</th>
+                                <th>Contact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                
+                                <td>C.E.O</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                
+                                <td>Finance Manager</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                              
+                                <td>General Manager</td>
+                                <td></td>
+                            </tr>
+                             <tr>
+                              
+                                <td>Logistics Officer</td>
+                                <td></td>
+                            </tr>
+                             <tr>
+                              
+                                <td>IT Manager</td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                              
+                                <td>Sales and Marketing</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                              
+                                <td>Customer Care</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        </table>
+                </div>
+
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s" style="">
+                    <div style="font-size:20px; padding:10px;"> Leave a comment or inquiry</div>
+                    
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
+                        <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user"></i></span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon1"  placeholder="Full Name">
+                    </div>
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.2s">
+                        <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope"></i></span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Email Address">
+                    </div>
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.6s">
+                        <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-phone"></i></span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon1"  placeholder="Phone Number">
+                    </div>
+                    <div class="input-group">
+                        <textarea name="" id="" cols="90" rows="6" class="form-control" placeholder="Write your messaege here"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn btn-lg wow fadeInUp" data-wow-delay="2.4s">Submit Your Message</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+    <!--End Contact-->
+    <!--Footer-->
+    <div id="footer"class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="wow fadeInUp">Contact Us</h4>
+                    <p title="All inquiries and
+orders are directed to this email"><i class="fa fa-envelope" aria-hidden="true" ></i> Outreach@hpfkenya.org</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> +254 708 538 990</p>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h4>Location</h4>
+                    <p>Harry's Poultry Farm Kenya Ltd.</p>
+                    <p>P.O. BOX.........,</p>
+                    <p>Kerugoya,</p>
+                    <p>Kenya.</p>
+
+
+                    
+                    <p><i class="fa fa-square-o" aria-hidden="true">Terms & Conditions</i></p>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h4>Stay in touch</h4>
+                    <input type="email" placeholder="Subscribe for Updates"><button class="btn btn-success">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+      
+       
+      
+<!----------------------------------------------------------------------------------------------------------------------------- -->
+  <div class="modal fade details-1" id="add_interventions" tableindex="-1" role="dialog" aria-labelledby="details-1" aria-hidden="true" >
+            <div class="modal-dialog modal-lg" style="background-color:#fff; margin-top:52px; height:auto;">
+              <div class="modal-header" style="background:#FF8551;">
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close" style="opacity:1;">
+                    <span aria-hidden="true"&times;></span><span class="close1" style="margin-right:20px; color:#fff;opacity:1;">X</span></button>
+                  <h4 class="modal-title text-center" style="text-transform:capitalize; color:#fff !important; text-align:center;">
+                      Welcome to Parent Stock Department </h4>
+               </div>
+               <div class="modal-body">
+                    <div class="container-fluid">
+                          <div class="row" style="height:auto;">
+                              <div class="col-sm-12" id="" style="background:#fff;height:auto; color:black; font-family:Times New Roman; font-size:17px;">
+                                   <div>
+                                     <section id="parent_section" syle="text-align:center;">
+                                         <h2 style="text-align:center; margin-top:50px; color:aqua;"  class="wow fadeInDown" data-wow-delay="1s">PARENT STOCK DEPARTMENT <br><small style="color:#fff;">we have what you want</small></h2>
+                                     </section> 
+                                    </div> 
+                                    <div style="padding:20px;">
+                                        <h4><center style="padding:10px; color:#FF8551;">PARENT STOCK</center> </h4>
+                                     <section >
+                                         <p style="font-size:18px;white-space: 2px;">We rear the <strong>Arbor</strong> Acres Parent Stock breed from <strong>Aviagen</strong>, which is the world's leading poultry breeding company known for its pedigree line of broiler chickens and turkeys. Arbor Acres has been in business for more than 75 years and is one of the oldest and most respected names in the poultry industry.<br> <br>The <strong>Aviagen Group</strong> is the global market leader in poultry genetics. Aviagen has three poultry breeding brands: Arbor Acres, Ross and Indian River, delivering day-old grandparent and parent stock chicks worldwide. These brands are among the most recognized and respected names in the industry and each has a proven record of success in addition to a large and loyal global customer base.<br><br> Our Company uses the Arbor Acres chicken breed to produce hatching eggs and broiler day old chicks. The Arbo Acres breed is the world's most successful combination of male and female lines with excellent <strong>feed conversion</strong> and <strong>meat yield</strong> combined with highly reproductive females, producing healthy day old broiler chicks.<br><br> The Arbor Acres breeder produces a high number of eggs combined with good hatchability to optimize chick cost in situations where broiler performance is important.</p>
+                                     </section>
+
+                                   </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- -------------------------------------------------------------------------------------------------------------------------- -->
+  <div class="modal fade details-1" id="add_interventions3" tableindex="-1" role="dialog" aria-labelledby="details-1" aria-hidden="true" >
+            <div class="modal-dialog modal-lg" style="background-color:#fff; margin-top:52px; height:auto;">
+              <div class="modal-header" style="background:#FF8551;">
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close" style="opacity:1;">
+                    <span aria-hidden="true"&times;></span><span class="close1" style="margin-right:20px; color:#fff;opacity:1;">X</span></button>
+                  <h4 class="modal-title text-center" style="text-transform:capitalize; color:#fff !important; text-align:center;">
+                      Welcome to Hatchery section </h4>
+               </div>
+               <div class="modal-body">
+                    <div class="container-fluid">
+                          <div class="row" style="height:auto;">
+                              <div class="col-sm-12" id="" style="background:#fff;height:auto; color:black; font-family:Times New Roman; font-size:17px;">
+                                
+                                    <div>
+                                     <section id="hatchery_section" syle="text-align:center;">
+                                         <h2 style="text-align:center; margin-top:50px; color:aqua;"  class="wow fadeInDown" data-wow-delay="1s">HATCHERY DEPARTMENT <br><small style="color:#fff;">we have what you want</small></h2>
+                                     </section> 
+                                    </div> 
+                                    <div style="padding:20px;">
+                                        <h4><center style="padding:10px; color:#FF8551;">HATCHERY MANAGEMENT</center> </h4>
+                                     <section >
+                                         <p style="font-size:18px;white-space: 2px;">HPF has successfully reared and hatched quality day old chicks from Kienyeji and Exotic which are sold to both our out-grower farmers and agents (distributors) in various parts of the country. <br><br>HPF has two hatcheries located in Kagio and Kerugoya. <br><br> In integrated operations, HPF satisfies the demands of customers who require a bird which performs consistently well and has the versatility to meet a broad range of end product requirements.</p>
+                                     </section>
+
+                                   </div>
+
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+      <!----------------------------------------------------------------------------------------------------------------------------- -->
+  <div class="modal fade details-1" id="add_interventions1" tableindex="-1" role="dialog" aria-labelledby="details-1" aria-hidden="true" >
+            <div class="modal-dialog modal-lg" style="background-color:#fff; margin-top:52px; height:auto;">
+              <div class="modal-header" style="background:#FF8551;">
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close" style="opacity:1;">
+                    <span aria-hidden="true"&times;></span><span class="close1" style="margin-right:20px; color:#fff;opacity:1;">X</span></button>
+                  <h4 class="modal-title text-center" style="text-transform:capitalize; color:#fff !important; text-align:center;">
+                      Welcome to Consultancy section </h4>
+               </div>
+               <div class="modal-body">
+                    <div class="container-fluid">
+                          <div class="row" style="height:auto;">
+                              <div class="col-sm-12" id="" style="background:#fff;height:auto; color:black; font-family:Times New Roman; font-size:17px;">
+                                <div>
+                                     <section id="hatchery_section" syle="text-align:center;">
+                                         <h2 style="text-align:center; margin-top:50px; color:aqua;"  class="wow fadeInDown" data-wow-delay="1s">CONSULTANCY DEPARTMENT <br><small style="color:#fff;">A LASTING SOLUTION TO YOUR PROBLEM</small></h2>
+                                     </section> 
+                                    </div> 
+                                    <div style="padding:20px;">
+                                        <h4><center style="padding:10px; color:#FF8551;text-decoration: underline;">CONSULTATION SECTION</center> </h4>
+                                     <section >
+                                         <p style="font-size:18px;white-space: 2px;">Our technical and management team also provides our clients with the assistance they need and constantly makes follow ups to ensure clients’ satisfaction is achieved.<br><br> Below are some of the consultancy services: </p>
+                                         <br>
+                                         <ul style="color:black; font-size:18; font-weight:bold;">
+                                             <li><i class="fa fa-check"></i> Chicken rearing plans and consultations.</li><br>
+                                             <li><i class="fa fa-check"></i> Medication Support</li><br>
+                                             <li><i class="fa fa-check"></i> Market Analysis and Research</li><br>
+                                             <li><i class="fa fa-check"></i> Investment advice</li><br>
+                                         </ul>
+                                     </section>
+
+                                   </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+    </div>
+<!-- -------------------------------------------------------------------------------------------------------------------------- -->
+ <div class="modal fade details-1" id="moreProducts" tableindex="-1" role="dialog" aria-labelledby="details-1" aria-hidden="true" >
+            <div class="modal-dialog modal-lg" style="background-color:#fff; margin-top:52px; height:auto;">
+              <div class="modal-header" style="background:#FF8551; text-align:center;">
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close" style="opacity:1;">
+                    <span aria-hidden="true"&times;></span><span class="close1" style="margin-right:20px; color:#fff;opacity:1;">X</span></button>
+                  <h4 class="modal-title text-center" style="text-transform:capitalize; color:#fff !important; text-align:center;">
+                      Products Gallery </h4>
+
+                <div class="gallery">
+                    <img src="images/images/bonelesschick.jpg">
+                        <div class="disc">
+                            Add some description here
+                        </div>
+                </div>
+
+                <div class="gallery">
+                    <img src="images/images/bonelesschick1.jpg">
+                        <div class="disc">
+                            Add some description here
+                        </div>
+                </div>
+
+                <div class="gallery">
+                    <img src="images/images/bonelesschick2.jpg">
+                        <div class="disc">
+                            Add some description here
+                        </div>
+                </div>
+
+                <div class="gallery">
+                    <img src="images/images/gizard.jpg">
+                        <div class="disc">
+                            Add some description here
+                        </div>
+                </div>
+
+                <div class="gallery">
+                    <img src="images/images/bonelesschick.jpg">
+                        <div class="disc">
+                            Add some description here
+                        </div>
+                </div>
+
+                 <div class="gallery">
+                    <img src="images/images/bonelesschick.jpg">
+                        <div class="disc">
+                            Add some description here
+                        </div>
+                </div>
+
+                
+                
+
+
+              
+               </div>
+               <div class="modal-body">
+                    <div class="container-fluid">
+                          <div class="row" style="height:auto;">
+                              <div class="col-sm-12" id="" style="background:#fff;height:auto; color:black; font-family:Times New Roman; font-size:17px;">
+                                
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<!-- -------------------------------------------------------------------------------------------------------------------------- -->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <script src="js/jquery-3.2.1.min.js"></script>
+    
+    <script src="js/wow.min.js"></script>
+    
+    <script>
+        new WOW().init();
+    </script>
+    
+    <script src="js/bootstrap.min.js"></script>
+   </body>
+</html>
+    
